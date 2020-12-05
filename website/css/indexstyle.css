@@ -1,0 +1,78 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+
+.fader{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../helth.jpeg);
+	height:100vh;
+	background-size:cover;
+	background-position:center;	
+}
+
+@media only screen and (max-width:400px)
+{
+	h1
+		{
+			color:#8B0000;
+		}
+	}
+body{
+	font-family:monospace;
+}
+
+.row{
+	max-width:1200px;
+	margin:auto;
+}
+
+.title{
+	position:absolute;
+	top:25%;
+	left:35%;
+	transform:traslate(-50%,-50%);
+}
+
+@keyframes change{
+0%{text-color:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));}
+20%{text-color:#CA4023;opacity:0.7;}
+40%{text-color:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))}
+60%{text-color:#820F3F;opacity:0.7;}
+80%{text-color:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))}
+60%{text-color:#2C0E90;opacity:0.7;}
+}
+
+.title h1{
+	animation: change 7s infinite;
+	color:white;
+	font-size:65px;
+}
+
+.title h2{
+	animation: change 7s infinite;
+	color:white;
+	font-size:30px;
+}
+
+
+.button{
+	margin-top:40px;
+	margin-left:50px;
+	cursor:pointer;
+}
+
+.btn{
+	border:1px solid #fff;
+	padding:10px 30px;
+	color:white;
+	text-decoration:none;
+	margin-right:5px;
+	font-size:13px;
+	font-family:"Roboto",sans-serif;
+}
+
+.btn:hover{
+	background-color:#fff;
+	color:#8B0000;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+	<title>REgistration PAGE</title>
+	<link rel="stylesheet" type="text/css" href="css/registerstyle.css">
+	<script src="../js/registervalidation.js"></script>
+</head>
+
+<body>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+ 
+		<script>
+			
+				function validform(){
+				var fname=document.myform.fname.value;
+				var lname=document.myform.lname.value;
+				var password=document.myform.pwd.value;
+				var confirmpassword=document.myform.cfmpwd.value;
+				 if(password.length<6){
+					alert("Password must be 6 characters long");
+					return false;
+				 }
+				 if(pwd!=cfmpwd){
+						alert("password not match");
+				 }
+				}
+		</script>
+	<div class="register">
+	<img src="avatar.png" class="avatar">
+		<h1>REGISTER HERE</h1>
+	
+		<form name="myform" method="post" id="register" action="login.html">
+			<p>FIRST NAME</p>
+			<input type="text" name="fname" id="name" placeholder="Enter First name" required="required">
+			
+			<p>LAST NAME</p>
+			<input type="text" name="lame" id="name" placeholder="Enter Last name" required="required">
+			
+			<p>EMAIL</p>
+			<input type="email" name="email" id="name" placeholder="Enter Email" required="required">
+			
+			<p>PASSWORD</p>
+			<input type="password" name="pwd" placeholder="Enter Password" required="required">
+			
+			<p>CONFIRM PASSWORD</p>
+			<input type="password" name="cfmpwd" placeholder="Enter Confirm Password" required="required">
+			
+			<input type="submit" name="submit" value="REGISTER" onclick=" return validform()" >
+			
+		</form>
+	</div>
+</body>
+</html>
